@@ -811,3 +811,10 @@ data object NT_SysAndEmojiResInfo : DexKitTarget.UsingStringVector() {
     override val declaringClass = ""
     override val filter = DexKitFilter.allowAll
 }
+
+data object MyRecentAdapterFilter : DexKitTarget.UsingStr() {
+    override val findMethod: Boolean = false
+    override val declaringClass = ""
+    override val traitString = arrayOf("RecentAdpater onLongClick")
+    override val filter = DexKitFilter.allowAll
+}
