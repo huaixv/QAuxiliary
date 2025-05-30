@@ -818,3 +818,10 @@ data object MyRecentAdapterFilter : DexKitTarget.UsingStr() {
     override val traitString = arrayOf("RecentAdpater onLongClick")
     override val filter = DexKitFilter.allowAll
 }
+
+data object MyIsShowTroopNavigateBar : DexKitTarget.UsingStr() {
+    override val findMethod: Boolean = true
+    override val declaringClass = ""
+    override val traitString = arrayOf("[isNeedToShowNavigateBar] exception ")
+    override val filter = DexKitFilter.allowAll
+}
